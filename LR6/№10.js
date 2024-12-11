@@ -1,9 +1,12 @@
-function m()
+function m(n)
 {
-  let mas = ['x', '', '', '', '', '', '', '', '', '',]
+  let mm = []
   let x = "x"
-  for(i = 1; i < 10; i++)
+  for(i = 0; i < n; i++)
   {
-    mas[i] = x + mas[i - 1]
+    mm.push(x)
+    x += "x"
   }
+  return mm
 }
+console.log(m(10))
